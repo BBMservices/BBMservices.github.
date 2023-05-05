@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Money Transfer Calculator&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>form {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>max-width: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: #f2f2f2;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>label {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>input[type="number"] {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 12px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-bottom: 2px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>select {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 12px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-bottom: 2px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>input[type="submit"] {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: #4CAF50;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 12px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>input[type="submit"]:hover {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: #45a049;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.result {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.summary {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Money Transfer Calculator&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;form id="calculator-form"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;label for="amount"&gt;Insira o valor à enviar (em Meticais):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="number" id="amount" name="amount" placeholder="Enter amount..."&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="submit" value="Calcular"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="result" id="result"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="summary" id="summary"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class = "note" id= "note"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">     </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>var calculatorForm = document.getElementById('calculator-form');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var resultDiv = document.getElementById('result');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var summaryDiv = document.getElementById('summary');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var noteDiv = document.getElementById('note')</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>calculatorForm.addEventListener('submit', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var sourceCurrency = "Meticais";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var targetCurrency = "Rublos";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var amount = this.elements['amount'].value;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// % Deduction from the amount in Meticals</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var deductedAmount = 0;<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Percental added to amount in Rubles</p>
+<p class="p1"><span class="Apple-converted-space">     </span>var deductedAmount_1 = 0 ;</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Call the conversion API here and get the converted amount</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// We will use a mock API call for this example</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate = 1.21;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_0 = exchangeRate - (exchangeRate*0.1); //10%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_1 = exchangeRate - (exchangeRate*0.09); //9%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_2 = exchangeRate - (exchangeRate*0.08); //8%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_3 = exchangeRate - (exchangeRate*0.075); //7.5%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_4 = exchangeRate - (exchangeRate*0.07); //7%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_5 = exchangeRate - (exchangeRate*0.065); //6.5%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_6 = exchangeRate - (exchangeRate*0.06); //6%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_7 = exchangeRate - (exchangeRate*0.055); //5.5%</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var exchangeRate_8 = exchangeRate - (exchangeRate*0.05); //5%</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var exchage_main = 0;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">     </span>// If condition for each amount interval</p>
+<p class="p1"><span class="Apple-converted-space">     </span>if (amount &lt; 30000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_0</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 30000 &amp;&amp; amount &lt;50000 ) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_1</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount&gt;= 50000 &amp;&amp; amount &lt; 75000) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_2</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 75000 &amp;&amp; amount &lt; 100000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_3</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 100000 &amp;&amp; amount &lt; 125000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_4</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 125000 &amp;&amp; amount &lt; 150000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_5</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}else if (amount &gt;= 150000 &amp;&amp; amount &lt; 200000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_6</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 200000) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>exchage_main = exchangeRate_7</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>var exchage_for_MZn = 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var echange_for_ruble = 0;<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>let convertedAmount;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (sourceCurrency === 'Meticais') {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Convert from USD to the target currency</p>
+<p class="p1"><span class="Apple-converted-space">      </span>convertedAmount = amount * exchage_main;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Convert from the target currency to USD</p>
+<p class="p1"><span class="Apple-converted-space">      </span>convertedAmount =<span class="Apple-converted-space">  </span>amount / exchage_main;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Display the result</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (sourceCurrency === 'Meticais') {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>resultDiv.textContent = `Ao enviar ${amount} Meticais receberá ${convertedAmount.toFixed(2)} ${targetCurrency}`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>resultDiv.textContent = `Para receber ${amount} Rublos deve enviar ${convertedAmount.toFixed(2)} Meticais`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Display the summary</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var commission = 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (amount &lt; 30000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 10</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 30000 &amp;&amp; amount &lt;50000 ) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 9</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount&gt;= 50000 &amp;&amp; amount &lt; 75000) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 8</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 75000 &amp;&amp; amount &lt; 100000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 7.5</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 100000 &amp;&amp; amount &lt; 125000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 7</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 125000 &amp;&amp; amount &lt; 150000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 6.5</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}else if (amount &gt;= 150000 &amp;&amp; amount &lt; 200000){</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 6</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else if (amount &gt;= 200000) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>commission = 5.5</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">   </span>/// const commissionAmount = amount * commission / 100;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const rate = exchangeRate.toFixed(2);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>summaryDiv.textContent = `Exchange rate: 1 MZN = ${exchangeRate} Rublos , Commission charged: ${commission}%`; /// (${commissionAmount.toFixed(2)} USD);</p>
+<p class="p2"><span class="Apple-converted-space">   </span></p>
+<p class="p1"><span class="Apple-converted-space">   </span>/// display additional information (note)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noteDiv.textContent = '"Envie o screenshot desta página juntamente com o comprovativo da transferência para o nosso whatsapp"';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
